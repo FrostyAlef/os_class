@@ -29,7 +29,7 @@ def download_and_save_image(link, idx):
     metadata_path = os.path.join("tasavir", image_id + '.json')
 
     download(link, save_path)
-    save_metadata(image_id, "Unknown", "Uncategorized", metadata_path)
+    # save_metadata(image_id, "Unknown", "Uncategorized", metadata_path)
 
 def get_t(image_path):
     URL = "https://server.phototag.ai/api/keywords"
