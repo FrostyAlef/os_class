@@ -25,10 +25,10 @@ def download(url, save_path):
 
 def download_and_save_image(link, idx):
     image_id = f'image_{idx}'
-    save_path = os.path.join("tasavir", image_id + '.jpg')
+    save_path = os.path.join("tasavir", image_id + '.jpg') # 'tasvir image_1.jpg' 
     metadata_path = os.path.join("tasavir", image_id + '.json')
 
-    download_image(link, save_path)
+    download(link, save_path)
     save_metadata(image_id, "Unknown", "Uncategorized", metadata_path)
 
 def get_t(image_path):
